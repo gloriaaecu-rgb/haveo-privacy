@@ -84,12 +84,12 @@
     <p>This data is stored locally on your device using iOS's built-in storage. It never leaves your phone unless <strong>you</strong> choose to share it.</p>
 
     <p><strong>Sent to Anthropic (only when AI features are active):</strong></p>
-    <p>When you chat with Haveo's AI coach (Coaching Studio, Role-Play, Talking Points), the messages you send are transmitted to Anthropic's Claude API to generate a response. Anthropic processes those messages according to their own <a href="https://www.anthropic.com/legal/privacy">privacy policy</a>.</p>
+    <p>When you chat with Haveo's AI coach (Coaching Studio, Role-Play, Talking Points), your messages are sent over HTTPS through a relay server we operate, which forwards them to Anthropic's Claude API and returns the response. The relay passes requests through without storing them. Anthropic processes those messages according to their own <a href="https://www.anthropic.com/legal/privacy">privacy policy</a>.</p>
 
     <p>We send Anthropic:</p>
     <ul>
       <li>The text of your chat messages with the AI coach</li>
-      <li>Your name, role, industry, and the event details you're prepping for (so the AI can give relevant advice)</li>
+      <li>Your name, role, industry, interests, and the event details you're prepping for (so the AI can give relevant advice)</li>
     </ul>
 
     <p>We do <strong>not</strong> send Anthropic:</p>
@@ -110,7 +110,7 @@
       <li>We don't share data with advertisers</li>
       <li>We don't sell data to third parties</li>
       <li>We don't access your camera, microphone, location, contacts, photos, or notifications</li>
-      <li>We don't have a backend server that holds your data</li>
+      <li>We don't have a backend server that stores your data (our relay only forwards AI requests without keeping them)</li>
     </ul>
 
     <h2>Your data, your control</h2>
@@ -122,7 +122,7 @@
     <p>There's no "delete my account" button because there are no accounts.</p>
 
     <h2>Children's privacy</h2>
-    <p>Haveo is rated for ages 12+ and is not directed at children under 12. We don't knowingly collect any information from children under 12.</p>
+    <p>Haveo is rated 13+ on the App Store (12+ in some regions and on earlier operating systems) and is not directed at children. We don't knowingly collect any information from children under 13.</p>
 
     <h2>Changes to this policy</h2>
     <p>If we change this policy, we'll update the "Last updated" date at the top and post the new version at this URL.</p>
