@@ -69,77 +69,91 @@
     <p class="updated">Last updated: August 19, 2026</p>
 
     <div class="tldr">
-      <strong>TL;DR:</strong> Haveo is a personal networking-prep assistant. Everything you type stays on your device. We don't have a server that stores your data, we don't sell your data, and we don't track you across other apps.
+      <strong>TL;DR:</strong> Almost everything you write in Haveo stays on your phone. There is no account and no database of yours on our side. When you ask Cici for help, what you typed goes to two companies — Anthropic, which writes the reply, and OpenAI, which speaks it aloud — and Haveo asks your permission before that happens for the first time. Nothing is sold, and nothing tracks you across other apps.
     </div>
 
-    <h2>What information Haveo collects</h2>
-
-    <p><strong>On your device only:</strong></p>
+    <h2>What Haveo keeps on your phone</h2>
     <ul>
-      <li>Your name, role, industry, and bio (the profile you set up during onboarding)</li>
-      <li>The events you add (name, date, time, description, your networking goals)</li>
-      <li>Notes, intros, talking points, and reflections you create</li>
-      <li>Your settings and preferences</li>
+      <li>Your name, role, industry, bio and interests</li>
+      <li>The events you add, including anything you paste into the notes for one</li>
+      <li>Your intros, pitches, talking points and cheat sheet</li>
+      <li>Your reflections, wins and quick notes</li>
+      <li>The people you record having met, and what you wrote about them</li>
+      <li>Your conversations with Cici</li>
+      <li>Your settings</li>
     </ul>
-    <p>This data is stored locally on your device using iOS's built-in storage. It never leaves your phone unless <strong>you</strong> choose to share it.</p>
+    <p>This is stored by the app on your own device. It is not uploaded, it is not backed up to us, and it is not part of an account anywhere. If you delete the app, it is gone — including from us, because we never had it.</p>
 
-    <p><strong>The microphone (only while you hold or tap to speak):</strong></p>
-    <p>Haveo can listen when you choose to speak instead of type — dictating a message, or practising out loud in Role-Play. Nothing is recorded or stored: your speech is turned into text, the text is what the app uses, and the audio is discarded. iOS asks your permission the first time, and you can withdraw it at any time in iOS Settings.</p>
-    <p>Where your device supports transcribing speech on the phone itself, Haveo asks it to do so, and the audio never leaves your device. On devices or languages where that isn't available, iOS transcribes it using Apple's speech recognition service, which means the audio is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Haveo never receives or keeps the audio either way.</p>
+    <h2>The microphone</h2>
+    <p>Haveo can listen when you choose to speak instead of type — dictating a message, or practising out loud in Role-Play. Nothing is recorded or kept: your speech is turned into text, the text is what the app uses, and the audio is discarded. iOS asks your permission the first time, and you can withdraw it at any time in iOS Settings.</p>
+    <p>Where your device can transcribe speech on the phone itself, Haveo asks it to, and the audio never leaves your device. On devices or languages where that is not available, iOS transcribes it using Apple's speech recognition service, which means Apple handles the audio under Apple's privacy policy. Haveo never receives or keeps the audio either way.</p>
 
-    <p><strong>Sent to Anthropic (only when AI features are active):</strong></p>
-    <p>When you chat with Haveo's AI coach (Coaching Studio, Role-Play, Talking Points), your messages are sent over HTTPS through a relay server we operate, which forwards them to Anthropic's Claude API and returns the response. The relay passes requests through without storing them. Anthropic processes those messages according to their own <a href="https://www.anthropic.com/legal/privacy">privacy policy</a>.</p>
+    <h2>Notifications</h2>
+    <p>Haveo can remind you about an event you added. If you allow it, those reminders are scheduled by your phone, on your phone. There is no server sending you messages, and we cannot send you anything — Haveo has no push notifications at all. You can turn reminders off in iOS Settings.</p>
 
-    <p>We send Anthropic:</p>
+    <h2>What goes to Anthropic</h2>
+    <p>Cici's replies are written by Claude, made by Anthropic. When you use an AI feature, your request travels over HTTPS through a relay we run, which forwards it to Anthropic and returns the answer. The relay does not keep your conversations.</p>
+    <p>What we send depends on what you asked for:</p>
     <ul>
-      <li>The text of your chat messages with the AI coach</li>
-      <li>Your name, role, industry, interests, and the event details you're prepping for (so the AI can give relevant advice)</li>
-      <li>The contents of any PDF or text file you choose to attach, so the AI can read it</li>
+      <li><strong>Any AI feature:</strong> your name, role, industry and interests, and the details of the event you are prepping for — so the reply fits your situation.</li>
+      <li><strong>Chat, Role-Play, intros, pitches, talking points:</strong> the messages you write, and anything you pasted into that event's notes.</li>
+      <li><strong>Attaching a file:</strong> the contents of the PDF or text file you chose, so it can be read.</li>
+      <li><strong>Asking what to try next time, after an event:</strong> what you wrote in your reflection — your wins, the moment that mattered, and where it got hard.</li>
+      <li><strong>Asking Cici to draft a message to someone you met:</strong> that person's name, where you met them, and the note you wrote about them.</li>
     </ul>
+    <p>We do not send Anthropic anything you did not ask for. Your other events, the reflections you have not asked for coaching on, and the notes about people you have not asked for a draft about, stay on your phone.</p>
 
-    <p>We do <strong>not</strong> send Anthropic:</p>
-    <ul>
-      <li>Your other events</li>
-      <li>Your reflections or quick notes</li>
-      <li>Your saved cheat sheet items</li>
-      <li>Anything from other parts of the app</li>
-    </ul>
+    <h2>What goes to OpenAI</h2>
+    <p>Cici's spoken voice is made by OpenAI. When she reads a reply aloud, the text of that sentence goes through the same relay to OpenAI to be turned into audio. Only that sentence is sent — not your profile, not your event, not the rest of the conversation.</p>
+    <p>If you turn AI features off, your phone's own built-in voice is used instead, and nothing is sent.</p>
 
-    <p>If AI features are disabled, <strong>nothing is sent to Anthropic</strong>.</p>
+    <h2>How long they keep it</h2>
+    <p>Neither company uses your conversations to train their AI models. Both delete what they receive within about 30 days, which they keep only to catch abuse of their systems. After that it is gone from them too. Their own policies say this in full: <a href="https://privacy.claude.com/">Anthropic</a> and <a href="https://openai.com/policies/privacy-policy/">OpenAI</a>.</p>
 
-    <p><strong>Sent to OpenAI (only when the AI reads something aloud):</strong></p>
-    <p>Haveo's spoken voice is generated by OpenAI. When the AI coach reads a reply out loud, the text of that sentence is sent through the same relay to OpenAI to be turned into audio, and is processed under <a href="https://openai.com/policies/privacy-policy/">OpenAI's privacy policy</a>. If you turn AI features off, your phone's own built-in voice is used instead and nothing is sent.</p>
+    <h2>Notes about other people</h2>
+    <p>Haveo lets you write down who you met and what you want to remember about them. Those notes live on your phone, and we never see them.</p>
+    <p>There is one exception, and it is worth knowing before you use it: if you ask Cici to draft a follow-up message to someone, that person's name and your note about them are sent to Anthropic to write it. That person is not a Haveo user. They did not agree to anything, and they do not know the app exists.</p>
+    <p>So a suggestion rather than a rule: write about people the way you would be comfortable with them reading. First names or initials are enough for Cici to be useful, and it is kinder to everyone. What you write about someone is your responsibility.</p>
 
     <h2>Asking first</h2>
-    <p>Before anything is sent to Anthropic or OpenAI, Haveo asks you and waits for you to agree. Until you do, the AI features stay switched off — and everything that runs on your phone alone (your events, notes, cheat sheet and reflections) keeps working as normal.</p>
-    <p>You can change your mind whenever you like: <strong>Profile &gt; AI &gt; Let Cici answer</strong>. Switching it off stops the chat, file reading and the spoken voice immediately. Nothing you have already saved is deleted.</p>
+    <p>Before anything is sent to Anthropic or OpenAI, Haveo asks you and waits for you to agree. Until you do, the AI features stay switched off — and everything that runs on your phone alone keeps working as normal.</p>
+    <p>You can change your mind whenever you like: <strong>Profile &gt; AI &gt; Let Cici answer</strong>. Switching it off stops the chat, the file reading and the spoken voice immediately. Nothing you have already saved is deleted.</p>
+
+    <h2>When you paste an event link</h2>
+    <p>If you paste a web link while adding an event, Haveo visits that page from your phone to read the details and fill in the form. That website will see the visit the same way it would if you had opened it in your browser. Haveo does not send it anything about you.</p>
+
+    <h2>Links that open your browser</h2>
+    <p>Some parts of the app open a website: this policy, our support page, Meetup and Eventbrite when you go looking for events, a Google Form if you ask to be told when a feature is ready, and a search when you want to look up a study we mention. Those open in your own browser and are handled by whoever runs them, under their rules, not ours.</p>
 
     <h2>What Haveo does not do</h2>
     <ul>
-      <li>We don't have user accounts or login</li>
-      <li>We don't collect analytics about how you use the app</li>
+      <li>We don't have accounts or logins</li>
+      <li>We don't collect analytics, and there is no crash-reporting or advertising code in the app</li>
       <li>We don't use cookies or tracking pixels</li>
-      <li>We don't share data with advertisers</li>
-      <li>We don't sell data to third parties</li>
-      <li>We don't access your camera, location, contacts, photos, or notifications</li>
-      <li>We don't have a backend server that stores your data (our relay only forwards AI requests without keeping them)</li>
+      <li>We don't sell your data, or share it with advertisers</li>
+      <li>We don't access your camera, your location, your contacts list, or your photo library on our own — Haveo only opens a file picker if you tap to attach something</li>
+      <li>We don't have a database of your notes. The relay forwards AI requests; it does not store your conversations</li>
     </ul>
 
     <h2>Your data, your control</h2>
     <ul>
-      <li><strong>Delete an event:</strong> removes it from your device immediately. We can't recover it.</li>
-      <li><strong>Delete the app:</strong> removes everything Haveo has stored on your device.</li>
-      <li><strong>Reset everything:</strong> iOS Settings &gt; General &gt; iPhone Storage &gt; Haveo &gt; Delete App.</li>
+      <li><strong>Delete an event:</strong> the event is removed from your phone right away. Notes, cheat sheet items and reflections you made for it may remain saved on your phone, and you can delete those in the places you created them.</li>
+      <li><strong>Delete a contact, a note or a chat:</strong> removed from your phone immediately.</li>
+      <li><strong>Delete everything:</strong> deleting the app removes everything Haveo has stored. iOS Settings &gt; General &gt; iPhone Storage &gt; Haveo &gt; Delete App.</li>
+      <li><strong>Stop anything being sent:</strong> Profile &gt; AI &gt; Let Cici answer, switched off.</li>
     </ul>
-    <p>There's no "delete my account" button because there are no accounts.</p>
+    <p>There is no "delete my account" button because there are no accounts. We cannot recover anything you delete, because we never had a copy.</p>
+
+    <h2>Where you are</h2>
+    <p>Haveo is made by a small company in Massachusetts, USA. Anthropic and OpenAI process what you send them on our behalf, under their own data protection agreements. Because your information lives on your phone rather than on our servers, most of it is only ever in your own hands. If you are in the UK or the EU and want to know what we hold about you, the honest answer is almost certainly nothing — but write to us and we will tell you.</p>
 
     <h2>Children's privacy</h2>
     <p>Haveo is rated 13+ on the App Store (12+ in some regions and on earlier operating systems) and is not directed at children. We don't knowingly collect any information from children under 13.</p>
 
-    <h2>Changes to this policy</h2>
-    <p>If we change this policy, we'll update the "Last updated" date at the top and post the new version at this URL.</p>
-
     <div class="footer">
+      <h2>Changes to this policy</h2>
+      <p>If we change this policy, we'll update the "Last updated" date at the top and post the new version at this URL.</p>
+
       <h2>Contact</h2>
       <p>Questions? Email <a href="mailto:haveoapp@gmail.com">haveoapp@gmail.com</a> and we'll get back to you within a few days.</p>
     </div>
