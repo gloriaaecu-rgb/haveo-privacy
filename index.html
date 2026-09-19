@@ -66,10 +66,10 @@
 <body>
   <div class="container">
     <h1>Haveo — Privacy Policy</h1>
-    <p class="updated">Last updated: September 8, 2026</p>
+    <p class="updated">Last updated: September 19, 2026</p>
 
     <div class="tldr">
-      <strong>TL;DR:</strong> Almost everything you write in Haveo stays on your phone. There is no account and no database of yours on our side. When you ask Haveo for help, what you typed goes to two companies — Anthropic, which writes the reply, and OpenAI, which speaks it aloud — and Haveo asks your permission before that happens for the first time. Nothing is sold, and nothing tracks you across other apps.
+      <strong>TL;DR:</strong> Almost everything you write in Haveo stays on your phone. There is no account and no database of yours on our side. When you ask Haveo for help, what you typed goes to two companies — Anthropic, which writes the reply, and OpenAI, which speaks it aloud — and Haveo asks your permission before that happens for the first time. Haveo also counts which features get opened, so we can see which parts of the app help; a count is the name of a feature and nothing else, and it can't carry anything you wrote. Nothing is sold, and nothing tracks you across other apps.
     </div>
 
     <h2>What Haveo keeps on your phone</h2>
@@ -119,6 +119,7 @@
 
     <h2>Asking first</h2>
     <p>Before anything is sent to Anthropic or OpenAI, Haveo asks you and waits for you to agree. Until you do, the AI features stay switched off — and everything that runs on your phone alone keeps working as normal.</p>
+    <p>The feature counts described under "Which features get used" are not covered by that question, and they run either way. They are not asked about because they carry nothing you wrote and nothing that points to you.</p>
     <p>You can change your mind whenever you like: <strong>Profile &gt; AI &gt; Let Haveo answer</strong>. Switching it off stops the chat, the file reading and the spoken voice immediately. Nothing you have already saved is deleted.</p>
 
     <h2>When you paste an event link</h2>
@@ -130,10 +131,20 @@
     <h2>When Haveo updates itself</h2>
     <p>Small fixes can reach Haveo without you downloading a new version from the App Store. For that to work, the app asks Expo — the company whose tools Haveo is built with — whether newer app code is ready, and downloads it if there is. That request says which version of Haveo you have and what kind of phone it is, and carries a random ID for the installation. Nothing you have written is included, and the ID is not tied to a name, an email or an account, because Haveo has none of those.</p>
 
+    <h2>Which features get used</h2>
+    <p>Haveo counts which parts of the app get opened and finished. It does not record what you write in them.</p>
+    <p>There is a fixed list of about twenty things it can count, and that is the whole list. "An intro was saved." "Event Mode was opened." "A practice run finished." Each count is one name from that list. Nothing is attached to it.</p>
+    <p>Haveo can't attach your words to a count, because there is nowhere to put them. The part of the app that sends a count accepts the name and nothing else. It has no second slot, so there is no way to pass your text into it even by mistake. A test runs every time the app is built and fails if anyone adds one.</p>
+    <p>Three things travel with each count: the name, the time, and which version of Haveo you have. There is also a random number, because the service that receives the counts asks for one. That number is made when you open the app and it is not saved anywhere. Open Haveo again and it is a different number. It can't be used to recognise you, and it can't join up what you did today with what you did last week.</p>
+    <p>What a count can't include: your name, your email, your events, your notes, your reflections, the people you met, or anything you typed.</p>
+    <p>Your location is not sent either. Haveo does not ask your phone where you are, and the service is told, on every count, not to work it out from your connection.</p>
+    <p>The counts go to PostHog, a company that counts app usage for other apps too. We read them to see which parts of Haveo get used and which parts nobody opens. They are not sold, and they are not used to follow you into other apps or websites.</p>
+    <p>This runs whether or not you have turned the AI on. It is separate from the AI: it sends no words, so there is nothing about it to agree to. Apple already tells us how many people download Haveo and how many come back. Apple can't tell us which features they use, and that is the only gap these counts fill.</p>
+
     <h2>What Haveo does not do</h2>
     <ul>
       <li>We don't have accounts or logins</li>
-      <li>We don't collect analytics, and there is no crash-reporting or advertising code in the app</li>
+      <li>We don't have crash-reporting or advertising code in the app. We do count which features get opened — see "Which features get used" above — and a count can't carry anything you wrote</li>
       <li>We don't use cookies or tracking pixels</li>
       <li>We don't sell your data, or share it with advertisers</li>
       <li>We don't access your camera, your location, your contacts list, or your photo library on our own — Haveo only opens a file picker if you tap to attach something</li>
@@ -145,7 +156,7 @@
       <li><strong>Delete an event:</strong> the event is removed from your phone right away. Notes, cheat sheet items and reflections you made for it may remain saved on your phone, and you can delete those in the places you created them.</li>
       <li><strong>Delete a contact, a note or a chat:</strong> removed from your phone immediately.</li>
       <li><strong>Delete everything:</strong> deleting the app removes everything Haveo has stored. iOS Settings &gt; General &gt; iPhone Storage &gt; Haveo &gt; Delete App.</li>
-      <li><strong>Stop anything being sent:</strong> Profile &gt; AI &gt; Let Haveo answer, switched off.</li>
+      <li><strong>Stop your words being sent:</strong> Profile &gt; AI &gt; Let Haveo answer, switched off. The feature counts above are separate and keep running — they carry no words, so there is nothing of yours in them to stop.</li>
     </ul>
     <p>There is no "delete my account" button because there are no accounts. We cannot recover anything you delete, because we never had a copy.</p>
 
